@@ -33,7 +33,6 @@ export default class LoginScreen extends React.Component {
                 <Text style={{ textAlign: 'center', fontSize: 35, marginVertical: 50 }} >¡Bienvenido de vuelta!</Text>
                 <Text style={{ fontSize: 16, color: 'gray', marginTop: 20 }}>Ingresa a tu cuenta</Text>
 
-
                 <Animatable.View ref={this.validateInput}>
                     <TextInput style={{ marginTop: 40, borderBottomColor: '#ddd', borderBottomWidth: 1, paddingBottom: 20, marginVertical: 30 }}
                         placeholder="Usuario"
@@ -54,26 +53,26 @@ export default class LoginScreen extends React.Component {
                     <Text style={{ color: 'red', textAlign: 'center', marginTop: 10 }}>{this.state.errorMsg}</Text>
                 </Animatable.View>
 
-                <TouchableOpacity style={{ marginTop: 20, alignItems: 'center', justifyContent: 'center' }}
+                <TouchableOpacity style={{ marginTop: 0, alignItems: 'center', justifyContent: 'center' }}
                     onPress={() => this.props.navigation.navigate('ForgotPassword')}>
-                    <Text style={{ color: '#F19CBB' }}>¿Olvidaste tu contraseña?</Text>
+                    <Text style={{ color: '#F19CBB' }}>Olvidé mi contraseña</Text>
                 </TouchableOpacity>
 
                 <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 10 }}>
                     <TouchableOpacity
                         onPress={() => this.onLogin()}
-                        style={{ width: 180, backgroundColor: '#F19CBB', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 0 }}>
-                        <Text style={{ textAlign: 'center', color: '#fff', fontSize: 25 }}>Login</Text>
+                        style={{ width: 180, backgroundColor: '#EFDECD', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 10 }}>
+                        <Text style={{ textAlign: 'center', color: '#fff', fontSize: 20 }}>Login</Text>
                     </TouchableOpacity>
 
                     <View style={{ marginTop: 50 }}>
                         <Text style={{ color: 'black' }}>¿No tienes una cuenta?</Text>
                     </View>
                     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                        <TouchableOpacity style={{ width: 100, backgroundColor: '#F19CBB', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 10 }}
+                        <TouchableOpacity style={{ width: 180, backgroundColor: '#F19CBB', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 10 }}
                             onPress={() => this.props.navigation.navigate('Signup')}
                         >
-                            <Text style={{ textAlign: 'center', color: '#fff', fontSize: 16 }}>Registrate</Text>
+                            <Text style={{ textAlign: 'center', color: '#fff', fontSize: 16 }}>Regístrate</Text>
                         </TouchableOpacity>
                     </View>
                     <Text style={{ marginTop: 100, color: 'gray' }}>Nailed it Copyright</Text>

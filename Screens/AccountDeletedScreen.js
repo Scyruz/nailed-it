@@ -4,7 +4,7 @@ import { TextInput } from 'react-native-gesture-handler'
 import * as Animatable from 'react-native-animatable';
 
 
-export default class UpdatePasswordScreen extends React.Component {
+export default class AccountDeletedScreen extends React.Component {
 
     constructor(props) {
         super(props)
@@ -21,14 +21,12 @@ export default class UpdatePasswordScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.title} >Contraseña actualizada</Text>
-
-
+                <Text style={styles.title} >Cuenta eliminada correctamente</Text>
                 <View style={{ alignItems: 'center', justifyContent: 'center', marginTop: 40 }}>
                     <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('Login')}
+                        onPress={() => this.props.navigation.navigate('Signup')}
                         style={{ width: 160, backgroundColor: '#F19CBB', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 0 }}>
-                        <Text style={{ textAlign: 'center', color: '#fff', fontSize: 20 }}>Login</Text>
+                        <Text style={{ textAlign: 'center', color: '#fff', fontSize: 20 }}>Sign Up</Text>
                     </TouchableOpacity>
 
                 </View>
@@ -48,7 +46,7 @@ const styles = StyleSheet.create({
     },
     title: {
         textAlign: 'center',
-        fontSize: 31,
+        fontSize: 20,
         marginVertical: 50,
     },
     text: {

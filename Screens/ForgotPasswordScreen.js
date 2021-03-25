@@ -4,7 +4,7 @@ import { TextInput } from 'react-native-gesture-handler'
 import * as Animatable from 'react-native-animatable';
 
 
-export default class Forgot extends React.Component {
+export default class ForgotPasswordScreen extends React.Component {
 
     constructor(props) {
         super(props)
@@ -47,8 +47,15 @@ export default class Forgot extends React.Component {
                     <TouchableOpacity
                         onPress={() => this.props.navigation.navigate('UpdatePassword')}
                         style={{ width: 200, backgroundColor: '#F19CBB', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 0 }}>
-                        <Text style={{ textAlign: 'center', color: '#fff', fontSize: 25 }}>Reestablecer</Text>
+                        <Text style={{ textAlign: 'center', color: '#fff', fontSize: 20 }}>Reestablecer</Text>
                     </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('AccountDeleted')}
+                        style={{ width: 200, backgroundColor: '#EFDECD', padding: 10, alignItems: 'center', justifyContent: 'center', borderRadius: 40, marginTop: 40 }}>
+                        <Text style={{ textAlign: 'center', color: 'red', fontSize: 18 }}>Borrar Cuenta</Text>
+                    </TouchableOpacity>
+
 
                 </View>
 

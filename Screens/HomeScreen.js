@@ -20,22 +20,22 @@ export default class HomeScreen extends React.Component {
         />
 
         <Text style={{ fontSize: 40, fontWeight: 'bold' }} >¡Bienvenido!</Text>
-        <Text style={{ fontSize: 16, color: 'gray', textAlign: 'center', marginHorizontal: 20 }} > Ingresa o crea una nueva cuenta mi ciela</Text>
+        <Text style={{ fontSize: 16, color: 'gray', textAlign: 'center', marginHorizontal: 20 }} > Ingresa o crea una nueva cuenta </Text>
 
         <View style={{ flexDirection: 'row', margin: 20, paddingVertical: 20 }}>
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('Login')}
-            style={{ backgroundColor: '#f792fa', padding: 10, width: 150, borderRadius: 30, marginHorizontal: 2 }}
+            style={{ backgroundColor: '#F19CBB', padding: 10, width: 150, borderRadius: 30, marginHorizontal: 2 }}
           >
             <Text style={{ textAlign: 'center', color: '#FFF', fontSize: 18 }}>Login</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             onPress={() => this.props.navigation.navigate('Signup')}
-            style={{ backgroundColor: '#FFF', padding: 10, width: 150, borderRadius: 30, marginHorizontal: 2, borderWidth: 1, borderColor: '#f792fa' }}
+            style={{ backgroundColor: '#FFF', padding: 10, width: 150, borderRadius: 30, marginHorizontal: 2, borderWidth: 1, borderColor: '#F19CBB' }}
 
           >
-            <Text style={{ textAlign: 'center', color: '#f792fa', fontSize: 18 }}>Sign Up</Text>
+            <Text style={{ textAlign: 'center', color: '#F19CBB', fontSize: 18 }}>Sign Up</Text>
           </TouchableOpacity>
 
         </View>
