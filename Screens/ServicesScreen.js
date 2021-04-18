@@ -224,8 +224,21 @@ const ServicesScreen = () => {
                         }}
                     />
                     <Text style={{ fontSize: 20, color: '#3D5B59' }} >{item.rating}</Text>
+                    
+                    {/*Price*/}
 
-
+                    <Image
+                        source={icons.dollar}
+                        style={{
+                            height: 20,
+                            width: 20,
+                            tintColor: "#B99095",
+                            marginRight: 2,
+                            marginLeft: 17,
+                            marginTop: 3,
+                        }}
+                    />
+                    <Text style={{ fontSize: 20, color: '#3D5B59' }} >{item.price}</Text>
                 </View>
                 <View
                     style={{
